@@ -1,158 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="Trézōr Bridge® | (en-US) | Introducing™ The New TreZōr™" />
-  <meta name="description" content="Experience the future of digital security and seamless asset connectivity with Trézōr Bridge® – the next evolution in Web3 and crypto asset protection.">
-  <title>Trézōr Bridge® | (en-US) | Introducing™ The New TreZōr™</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-      background-color: #f9f9f9;
-    }
-    header {
-      background: #0e0e2c;
-      color: #fff;
-      padding: 20px 40px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .hero {
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #161646, #2e2e90);
-      color: white;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.1em;
-      max-width: 700px;
-      margin: auto;
-    }
-    .hero button {
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 1em;
-      border: none;
-      background-color: #ff8c00;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 40px 20px;
-      background-color: #fff;
-    }
-    .card {
-      background: #f0f0fa;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      padding: 30px;
-      max-width: 300px;
-      flex: 1;
-    }
-    .card h3 {
-      margin-top: 0;
-    }
-    .accordion {
-      background-color: #fff;
-      padding: 40px 20px;
-    }
-    .accordion-item {
-      margin-bottom: 15px;
-    }
-    .accordion-title {
-      font-weight: bold;
-      cursor: pointer;
-      padding: 10px;
-      background: #ddd;
-      border-radius: 5px;
-    }
-    .accordion-content {
-      display: none;
-      padding: 10px 15px;
-      background: #f7f7f7;
-      border-left: 3px solid #ff8c00;
-    }
-    footer {
-      background-color: #0e0e2c;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-  </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const titles = document.querySelectorAll(".accordion-title");
-      titles.forEach((title) => {
-        title.addEventListener("click", function () {
-          const content = this.nextElementSibling;
-          content.style.display = content.style.display === "block" ? "none" : "block";
-        });
-      });
-    });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trézōr.iō/start® | Secure* Cryptō Hardware™ Wallet©</title>
+    <meta name="description" content="Secure your cryptocurrency with Trézōr.iō/start®, the leading secure crypto hardware wallet. Experience unparalleled protection for your digital assets.">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #fff;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #3a3a59;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        .content-section {
+            padding: 80px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            color: #f0abfc;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            color: #d4d4e7;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #f0abfc;
+            color: #3a3a59;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #e08af2;
+        }
+
+        .features {
+            padding: 60px 20px;
+            background-color: #272740;
+        }
+
+        .features h2 {
+            color: #f0abfc;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            font-weight: 500;
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #3a3a59;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #f0abfc;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+
+        .card p {
+            color: #d4d4e7;
+            font-size: 1em;
+        }
+
+        .accordion-section {
+            padding: 60px 20px;
+            background-color: #1a1a2e;
+        }
+
+        .accordion-section h2 {
+            color: #f0abfc;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            font-weight: 500;
+        }
+
+        .accordion {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #4d4d73;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #4d4d73;
+        }
+
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+
+        .accordion-header {
+            background-color: #3a3a59;
+            color: #fff;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .accordion-header h4 {
+            margin: 0;
+        }
+
+        .accordion-content {
+            padding: 20px;
+            display: none;
+            background-color: #272740;
+            color: #d4d4e7;
+        }
+
+        footer {
+            background-color: #3a3a59;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Trézōr.iō/start®</h1>
+        <p style="color: #f0abfc; font-size: 1.2em;">Secure* Cryptō Hardware™ Wallet©</p>
+    </header>
 
-<header>
-  <h1>Trézōr Bridge®</h1>
-  <p>(en-US) | Introducing™ The New TreZōr™</p>
-</header>
+    <section class="content-section">
+        <h2>Your Fortress for the Future of Finance</h2>
+        <p>Introducing Trézōr.iō/start®, the ultimate secure crypto hardware wallet designed to safeguard your digital assets with uncompromising protection. In an era of evolving digital finance, security is paramount. Trézōr.iō/start® provides a robust and intuitive solution, empowering you to manage your cryptocurrencies with absolute confidence and control. Take the first step towards securing your financial future today.</p>
+        <a href="#" class="button">Get Started with Trézōr®</a>
+    </section>
 
-<section class="hero">
-  <h2>Introducing the Future of Secure Digital Connectivity</h2>
-  <p>Trézōr Bridge® empowers you with next-generation crypto asset integration and secure bridging technology—redefining how you interact with Web3.</p>
-  <button>Learn More</button>
-</section>
+    <section class="features">
+        <h2>Unrivaled Security & Key Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Multi-Layered Security</h3>
+                <p>Engineered with advanced cryptographic protocols and secure element technology, Trézōr.iō/start® offers multi-layered protection against a wide range of threats, ensuring your private keys remain inaccessible to malicious actors.</p>
+            </div>
+            <div class="card">
+                <h3>Cold Storage Isolation</h3>
+                <p>Keep your private keys offline and isolated from internet-connected devices. This cold storage approach significantly reduces the risk of online attacks, providing a secure vault for your valuable cryptocurrencies.</p>
+            </div>
+            <div class="card">
+                <h3>Intuitive User Interface</h3>
+                <p>Designed for both beginners and experienced users, the Trézōr.iō/start® boasts a user-friendly interface that simplifies the process of managing your crypto assets, making security accessible to everyone.</p>
+            </div>
+            <div class="card">
+                <h3>Wide Cryptocurrency Support</h3>
+                <p>Trézōr.iō/start® supports a vast array of popular cryptocurrencies, allowing you to manage your diverse portfolio within a single, secure device. Expand your digital asset holdings with peace of mind.</p>
+            </div>
+            <div class="card">
+                <h3>Open-Source Transparency</h3>
+                <p>Built with open-source firmware, Trézōr.iō/start® promotes transparency and community scrutiny, enhancing trust and security through collaborative development and peer review.</p>
+            </div>
+            <div class="card">
+                <h3>Secure Backup & Recovery</h3>
+                <p>Never lose access to your funds. Trézōr.iō/start® facilitates secure backup and recovery options, ensuring that your assets can be restored even in unforeseen circumstances.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="features">
-  <div class="card">
-    <h3>Secure Bridge Protocol</h3>
-    <p>End-to-end encryption ensures every connection is fortified with military-grade security, enabling safe transfers across decentralized ecosystems.</p>
-  </div>
-  <div class="card">
-    <h3>Lightning-Fast Sync</h3>
-    <p>Experience real-time data transmission between your wallet and Web3 applications with unmatched speed and precision.</p>
-  </div>
-  <div class="card">
-    <h3>Global Compatibility</h3>
-    <p>Trézōr Bridge® seamlessly integrates with all major platforms, wallets, and networks, offering true cross-chain support and usability.</p>
-  </div>
-</section>
+    <section class="accordion-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h4>What is a crypto hardware wallet?</h4>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>A crypto hardware wallet is a physical device designed to securely store your private keys offline, protecting your cryptocurrency from online threats like hacking and malware.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h4>Why choose Trézōr.iō/start®?</h4>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Trézōr.iō/start® offers a robust combination of advanced security features, user-friendly design, broad cryptocurrency support, and open-source transparency, making it a leading choice for securing your digital assets.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h4>How do I set up my Trézōr.iō/start®?</h4>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Setting up your Trézōr.iō/start® is a straightforward process guided by our comprehensive documentation and intuitive setup wizard. Visit our support page for detailed instructions.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h4>Which cryptocurrencies are supported?</h4>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Trézōr.iō/start® supports a wide range of cryptocurrencies, including Bitcoin, Ethereum, Litecoin, and many more. Please refer to our official website for a complete and up-to-date list of supported assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="accordion">
-  <div class="accordion-item">
-    <div class="accordion-title">What is Trézōr Bridge®?</div>
-    <div class="accordion-content">Trézōr Bridge® is a secure application layer that facilitates communication between your hardware wallet and supported browsers or apps.</div>
-  </div>
-  <div class="accordion-item">
-    <div class="accordion-title">Is the new TreZōr™ compatible with older models?</div>
-    <div class="accordion-content">Yes, the new TreZōr™ is fully backward-compatible, with enhanced performance and firmware upgrades for legacy models.</div>
-  </div>
-  <div class="accordion-item">
-    <div class="accordion-title">Do I need an internet connection?</div>
-    <div class="accordion-content">Yes, Trézōr Bridge® requires an internet connection to interface securely with browser-based or desktop applications.</div>
-  </div>
-</section>
+    <footer>
+        <p>&copy; 2025 Trézōr.iō/start®. Secure* Cryptō Hardware™ Wallet©. All rights reserved.</p>
+        <p><a href="#" style="color: #f0abfc; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #f0abfc; text-decoration: none;">Terms of Service</a></p>
+    </footer>
 
-<footer>
-  &copy; 2025 Trézōr Bridge®. All rights reserved. | Privacy Policy | Terms of Use
-</footer>
+    <script>
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
 
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+
+                document.querySelectorAll('.accordion-content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.style.display = 'none';
+                        otherContent.previousElementSibling.querySelector('span').textContent = '+';
+                    }
+                });
+
+                content.style.display = isOpen ? 'none' : 'block';
+                header.querySelector('span').textContent = isOpen ? '+' : '-';
+            });
+        });
+    </script>
 </body>
 </html>
